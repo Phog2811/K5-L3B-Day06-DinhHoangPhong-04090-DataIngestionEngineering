@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-11-14T03:08:00.724843+00:00",
+  "model": {
+    "provider": "Google Gemini API (google-genai)",
+    "model_name": "gemini-embedding-001",
+    "dimensions": 3072,
+    "document_task_type": "RETRIEVAL_DOCUMENT",
+    "query_task_type": "RETRIEVAL_QUERY",
+    "total_api_calls": 73,
+    "total_texts_embedded": 888,
+    "total_chars_embedded": 502722,
+    "total_api_seconds": 75.091,
+    "cache_hits": 3,
+    "estimated_cost_usd": 0.0,
+    "cost_note": "Gemini API free tier ($0.00 actual spend); list reference rate is $0.15/1M tokens.",
+    "api_errors_retried": []
+  },
+  "vector_store": {
+    "engine": "PostgreSQL 16 + pgvector 0.8.7",
+    "metric": "cosine_distance (<=>), similarity = 1 - distance",
+    "search_mode": "exact sequential scan (no approximate HNSW/IVFFlat index)",
+    "upsert_stats": {
+      "A": {
+        "written": 565,
+        "deleted_obsolete": 0,
+        "total_after": 565
+      },
+      "B": {
+        "written": 302,
+        "deleted_obsolete": 0,
+        "total_after": 302
+      },
+      "C": {
+        "written": 302,
+        "deleted_obsolete": 0,
+        "total_after": 302
+      }
+    }
+  },
+  "timings_seconds": {
+    "ingestion": 3.22,
+    "embed_A": 383.666,
+    "upsert_A": 0.784,
+    "embed_B": 256.031,
+    "upsert_B": 0.41,
+    "embed_C_reused_from_B": 0.0,
+    "upsert_C": 0.443,
+    "embed_queries": 9.366,
+    "query_search": {
+      "A": 0.6391,
+      "B": 0.4883,
+      "C": 0.5497
+    }
+  },
+  "chunk_stats": {
+    "A": {
+      "count": 565,
+      "total_chars": 262356,
+      "min_chars": 53,
+      "p50_chars": 500.0,
+      "mean_chars": 464.3,
+      "p95_chars": 500,
+      "max_chars": 500
+    },
+    "B": {
+      "count": 302,
+      "total_chars": 238598,
+      "min_chars": 131,
+      "p50_chars": 854.5,
+      "mean_chars": 790.1,
+      "p95_chars": 1081,
+      "max_chars": 1100
+    },
+    "C": {
+      "count": 302,
+      "total_chars": 238598,
+      "min_chars": 131,
+      "p50_chars": 854.5,
+      "mean_chars": 790.1,
+      "p95_chars": 1081,
+      "max_chars": 1100
+    }
+  },
+  "idempotency": {
+    "strategy_b_before_reupsert": 302,
+    "strategy_b_after_reupsert": 302,
+    "no_duplicates_confirmed": true,
+    "strategy_b_reupsert_stats": {
+      "written": 302,
+      "deleted_obsolete": 0,
+      "total_after": 302
+    },
+    "obsolete_pruning_probe": {
+      "initial_count": 3,
+      "after_doc_shrink_count": 1,
+      "deleted_obsolete_rows": 2,
+      "after_cleanup_count": 0
+    }
+  },
+  "metrics_summary": {
+    "A:dev": {
+      "strategy": "A",
+      "split": "dev",
+      "total": 18,
+      "hit1_count": 11,
+      "hit1_rate": 0.6111,
+      "hit1_fraction": "11/18",
+      "hit3_count": 13,
+      "hit3_rate": 0.7222,
+      "hit3_fraction": "13/18",
+      "filter_total": 3,
+      "filter_compliant_count": 3,
+      "filter_fraction": "3/3"
+    },
+    "A:test": {
+      "strategy": "A",
+      "split": "test",
+      "total": 6,
+      "hit1_count": 5,
+      "hit1_rate": 0.8333,
+      "hit1_fraction": "5/6",
+      "hit3_count": 6,
+      "hit3_rate": 1.0,
+      "hit3_fraction": "6/6",
+      "filter_total": 2,
+      "filter_compliant_count": 1,
+      "filter_fraction": "1/2"
+    },
+    "B:dev": {
+      "strategy": "B",
+      "split": "dev",
+      "total": 18,
+      "hit1_count": 15,
+      "hit1_rate": 0.8333,
+      "hit1_fraction": "15/18",
+      "hit3_count": 18,
+      "hit3_rate": 1.0,
+      "hit3_fraction": "18/18",
+      "filter_total": 3,
+      "filter_compliant_count": 2,
+      "filter_fraction": "2/3"
+    },
+    "B:test": {
+      "strategy": "B",
+      "split": "test",
+      "total": 6,
+      "hit1_count": 5,
+      "hit1_rate": 0.8333,
+      "hit1_fraction": "5/6",
+      "hit3_count": 5,
+      "hit3_rate": 0.8333,
+      "hit3_fraction": "5/6",
+      "filter_total": 2,
+      "filter_compliant_count": 1,
+      "filter_fraction": "1/2"
+    },
+    "C:dev": {
+      "strategy": "C",
+      "split": "dev",
+      "total": 18,
+      "hit1_count": 15,
+      "hit1_rate": 0.8333,
+      "hit1_fraction": "15/18",
+      "hit3_count": 18,
+      "hit3_rate": 1.0,
+      "hit3_fraction": "18/18",
+      "filter_total": 3,
+      "filter_compliant_count": 3,
+      "filter_fraction": "3/3"
+    },
+    "C:test": {
+      "strategy": "C",
+      "split": "test",
+      "total": 6,
+      "hit1_count": 6,
+      "hit1_rate": 1.0,
+      "hit1_fraction": "6/6",
+      "hit3_count": 6,
+      "hit3_rate": 1.0,
+      "hit3_fraction": "6/6",
+      "filter_total": 2,
+      "filter_compliant_count": 2,
+      "filter_fraction": "2/2"
+    }
+  }
+}

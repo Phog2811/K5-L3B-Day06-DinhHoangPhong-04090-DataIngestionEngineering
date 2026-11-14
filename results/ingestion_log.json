@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-11-14T02:57:07.475004+00:00",
+  "total_physical_pages": 112,
+  "total_content_pages": 95,
+  "ingestion_seconds": 3.22,
+  "documents": [
+    {
+      "document_id": "nist-ai-100-1",
+      "physical_pages": 48,
+      "content_pages": 42,
+      "excluded_pages_count": 6,
+      "empty_pages": [],
+      "low_text_pages": [
+        {
+          "page": 16,
+          "chars": 376
+        },
+        {
+          "page": 39,
+          "chars": 434
+        }
+      ],
+      "raw_chars": 101860,
+      "normalized_chars": 99998,
+      "errors": []
+    },
+    {
+      "document_id": "nist-ai-600-1",
+      "physical_pages": 64,
+      "content_pages": 53,
+      "excluded_pages_count": 11,
+      "empty_pages": [],
+      "low_text_pages": [
+        {
+          "page": 50,
+          "chars": 383
+        }
+      ],
+      "raw_chars": 137327,
+      "normalized_chars": 139011,
+      "errors": []
+    }
+  ],
+  "chunk_stats": {
+    "A": {
+      "count": 565,
+      "total_chars": 262356,
+      "min_chars": 53,
+      "p50_chars": 500.0,
+      "mean_chars": 464.3,
+      "p95_chars": 500,
+      "max_chars": 500
+    },
+    "B": {
+      "count": 302,
+      "total_chars": 238598,
+      "min_chars": 131,
+      "p50_chars": 854.5,
+      "mean_chars": 790.1,
+      "p95_chars": 1081,
+      "max_chars": 1100
+    },
+    "C": {
+      "count": 302,
+      "total_chars": 238598,
+      "min_chars": 131,
+      "p50_chars": 854.5,
+      "mean_chars": 790.1,
+      "p95_chars": 1081,
+      "max_chars": 1100
+    }
+  }
+}

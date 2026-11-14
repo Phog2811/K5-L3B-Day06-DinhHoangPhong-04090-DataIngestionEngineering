@@ -1,0 +1,185 @@
+{
+  "audit_info": {
+    "evaluator": "Đinh Hoàng Phong (tác giả bài nộp, hỗ trợ kiểm tra bởi AI assistant)",
+    "scope": "Toàn bộ 6/6 câu hỏi test (q19-q24) × top-3 = 18 bản ghi chunk mỗi chiến lược (54 bản ghi cho A, B, C), vượt mức tối thiểu 5 câu test để kiểm tra cả 2 câu metadata_filter thuộc test (q23, q24).",
+    "independence_and_bias_note": "Tác giả tự kiểm chứng đối chiếu từng bản ghi với PDF gốc và manifest; tồn tại rủi ro thiên lệch của người thiết kế chiến lược. Mọi lỗi phát hiện thêm trên tập dev và toàn corpus cũng được báo cáo nguyên trạng.",
+    "grounding_scale": {
+      "0": "Không có bằng chứng hoặc hoàn toàn không chứa cơ sở trả lời",
+      "1": "Có câu/đoạn liên quan nhưng thiếu điều kiện/ngữ cảnh nguồn cần thiết (ví dụ lẫn tài liệu sai phạm vi/năm hoặc thiếu chủ thể dẫn tới rủi ro trả lời sai phạm vi)",
+      "2": "Đủ bằng chứng trực tiếp trong top-3 để trả lời đầy đủ điều kiện và truy nguồn chính xác"
+    }
+  },
+  "summary": {
+    "A": {
+      "metadata_accurate_test_records": "18/18",
+      "filter_compliance_test": "1/2",
+      "filter_compliance_dev": "3/3",
+      "grounding_test_distribution": {"0": 0, "1": 1, "2": 5},
+      "grounding_test_mean_out_of_2": 1.83
+    },
+    "B": {
+      "metadata_accurate_test_records": "18/18",
+      "filter_compliance_test": "1/2",
+      "filter_compliance_dev": "2/3",
+      "grounding_test_distribution": {"0": 0, "1": 1, "2": 5},
+      "grounding_test_mean_out_of_2": 1.83
+    },
+    "C": {
+      "metadata_accurate_test_records": "18/18",
+      "filter_compliance_test": "2/2",
+      "filter_compliance_dev": "3/3",
+      "grounding_test_distribution": {"0": 0, "1": 0, "2": 6},
+      "grounding_test_mean_out_of_2": 2.0
+    }
+  },
+  "corpus_and_dev_metadata_audit_note": {
+    "strategy_a_dev_hits": "54/54 khớp manifest/tài liệu gốc (100%).",
+    "strategy_b_c_defect_found": "Khi kiểm tra chéo toàn bộ 302 chunk của B/C với manifest, 8/302 chunk thuộc NIST.AI.100-1.pdf (p006:para:001-002, p012:para:000-003, p014:para:002, p016:para:000) bị heuristic infer_section() trong by_paragraph() gán nhầm section='appendix' thay vì 'executive_summary'/'foundational' vì văn bản chứa tham chiếu '(see Appendix A)' hoặc 'See Appendix A'. Trong truy vết dev (54 bản ghi/chiến lược), lỗi này xuất hiện ở 3/54 bản ghi của B và C (câu dev q02 rank #1,#2 và q10 rank #3 -> 51/54 đúng trên dev; còn nist-ai-600-1:p026:para:003 ở q17 rank #2 của B được cập nhật đúng từ govern sang map do MAP 1.1 thực sự bắt đầu giữa trang 26). Trên toàn bộ tập test (18/18 bản ghi × 3 chiến lược = 54/54), không bản ghi nào dính lỗi này."
+  },
+  "test_questions_audit": [
+    {
+      "question_id": "q19",
+      "type": "truc_tiep",
+      "gold": "nist-ai-100-1:p17",
+      "filter_requested": null,
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #2 (nist-ai-100-1:p017:fixed:002) chứa trọn vẹn chú thích Fig. 4 nêu Valid & Reliable là nền tảng và Accountable & Transparent đặt dọc vì liên quan mọi đặc tính khác; đủ truy nguồn 100-1:p17 (dù rank #1 là đoạn chữ giữa trang bị cắt ở #1)."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (nist-ai-100-1:p017:para:001) giữ nguyên toàn bộ chú thích Fig. 4 và đoạn giải thích kèm theo; đầy đủ và truy nguồn chính xác."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Giống hệt B (không có filter); rank #1 đầy đủ và truy nguồn sạch."
+      }
+    },
+    {
+      "question_id": "q20",
+      "type": "dieu_kien_ngoai_le",
+      "gold": "nist-ai-100-1:p37 (alt: nist-ai-600-1:p45)",
+      "filter_requested": null,
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (100-1:p037:fixed:003) và Rank #2 (600-1:p045:fixed:004) đều chứa nguyên văn điều kiện áp dụng MANAGE 2.4 ('when AI systems demonstrate performance or outcomes inconsistent with intended use'); đủ truy nguồn."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (100-1:p037:para:001) giữ trọn cả nhóm MANAGE 2..2.4; đủ điều kiện và ngữ cảnh."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Giống hệt B (không có filter); rank #1 trọn vẹn."
+      }
+    },
+    {
+      "question_id": "q21",
+      "type": "dien_dat_lai",
+      "gold": "nist-ai-600-1:p15",
+      "filter_requested": null,
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (600-1:p015:fixed:001) giữ nguyên câu giải thích cơ chế indirect prompt injection (bỏ qua giao diện trực tiếp, chèn prompt vào dữ liệu có khả năng được truy xuất); đủ để trả lời và trích nguồn 600-1:p15 dù hai mép chunk bị cắt chữ."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (600-1:p015:para:000) giữ trọn ngữ cảnh phân biệt direct vs indirect prompt injection và ví dụ hậu quả bảo mật."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Giống hệt B (không có filter); đầy đủ ngữ cảnh."
+      }
+    },
+    {
+      "question_id": "q22",
+      "type": "truc_tiep",
+      "gold": "nist-ai-600-1:p37",
+      "filter_requested": null,
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (600-1:p037:fixed:005) giữ trọn cả 3 nhóm tấn công của MS-2.7-007 (chỉ cắt cuối thẻ [GAI Risks: ... Hatef]), và Rank #2 giữ tiêu đề MEASURE 2.7; đủ trả lời và truy nguồn 600-1:p37."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Rank #1 (600-1:p037:para:003) giữ trọn MS-2.7-007 cả nhãn GAI Risks và Rank #2 giữ tiêu đề MEASURE 2.7."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": "N/A",
+        "grounding_score": 2,
+        "reason": "Giống hệt B (không có filter); đầy đủ hoàn toàn."
+      }
+    },
+    {
+      "question_id": "q23",
+      "type": "metadata_filter",
+      "gold": "nist-ai-100-1:p29",
+      "filter_requested": {"document_type": "core_framework", "section": "govern"},
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": false,
+        "grounding_score": 1,
+        "reason": "Rank #1 (100-1:p029:fixed:003) có đúng phát biểu GOVERN 6.2 từ nguồn Core Framework 2023, nhưng bị cắt cụt tiêu đề cha GOVERN 6 ('hts.') ở đầu và trộn sang '5.2 Map', đồng thời Rank #2 và #3 kéo nhầm tài liệu 2024 GAI Profile (GV-6.2-006, GV-6.1-010) sai phạm vi câu hỏi -> gây nhiễu ngữ cảnh 2023 vs 2024 cho bước sinh câu trả lời."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": false,
+        "grounding_score": 1,
+        "reason": "Không lọc metadata nên toàn bộ 3/3 kết quả đều rơi vào NIST AI 600-1 (2024 Generative AI Profile: p026, p025, p026) và 0/3 thuộc 2023 Core Framework như câu hỏi yêu cầu; Rank #2 chỉ lặp lại gián tiếp dòng GOVERN 6.2 rồi gắn action GAI 2024 nên thiếu nguồn gốc 2023 để truy xuất đúng tài liệu."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": true,
+        "grounding_score": 2,
+        "reason": "SQL filter document_type='core_framework' AND section='govern' loại sạch tài liệu 2024; Rank #1 (100-1:p029:para:001) giữ trọn GOVERN 6, GOVERN 6.1, GOVERN 6.2 cùng tất cả top-3 đều thuộc Core Framework 2023 / govern."
+      }
+    },
+    {
+      "question_id": "q24",
+      "type": "metadata_filter",
+      "gold": "nist-ai-600-1:p49",
+      "filter_requested": {"year": 2024, "section": "manage"},
+      "A": {
+        "metadata_ok": "3/3",
+        "filter_compliant": true,
+        "grounding_score": 2,
+        "reason": "Cả 3 hits đều thuộc NIST.AI.600-1 (2024, manage); Rank #1 giữ trọn văn bản MG-4.3-001 và Rank #2 bổ sung tiêu đề MANAGE 4.3."
+      },
+      "B": {
+        "metadata_ok": "3/3",
+        "filter_compliant": true,
+        "grounding_score": 2,
+        "reason": "Cả 3 hits tự nhiên nằm trong 2024 / manage; Rank #1 giữ trọn MG-4.3-001 và Rank #2 có MANAGE 4.3."
+      },
+      "C": {
+        "metadata_ok": "3/3",
+        "filter_compliant": true,
+        "grounding_score": 2,
+        "reason": "Filter year=2024 AND section='manage' xác nhận 3/3 tuân thủ; Rank #1 giữ trọn MG-4.3-001 và truy nguồn sạch 600-1:p49."
+      }
+    }
+  ]
+}

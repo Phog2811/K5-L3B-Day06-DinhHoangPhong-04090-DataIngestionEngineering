@@ -1,0 +1,246 @@
+{
+  "audit_info": {
+    "evaluator": "Đinh Hoàng Phong (tác giả bài nộp, hỗ trợ kiểm tra bởi AI assistant)",
+    "independence_and_bias_note": "10 vị trí neo (L01-L10) được chốt cố định trong starter/src/run.py (COHERENCE_ANCHORS) trước khi chạy pipeline. Do tác giả đồng thời là người xây chiến lược và người chấm thủ công, tồn tại nguy cơ thiên lệch xác nhận đối với B/C; để giảm thiên lệch, lý do chấm được gắn trực tiếp vào điểm cắt từ/câu quan sát trong results/coherence_samples.json và cả lỗi tách trang của B/C trên các trang khác cũng được ghi nhận.",
+    "scale": {
+      "0": "Bị cắt giữa ý/điều kiện cốt lõi hoặc thiếu chủ thể làm không tự hiểu được",
+      "1": "Hiểu được phần chính tại vị trí neo nhưng bị cắt ngang câu/từ hoặc thiếu ngữ cảnh liền kề",
+      "2": "Tự hiểu trọn vẹn và giữ nguyên ranh giới tiêu đề/đoạn/mục"
+    }
+  },
+  "summary_scores": {
+    "A": {
+      "count": 10,
+      "distribution": {"0": 2, "1": 8, "2": 0},
+      "total_points": 8,
+      "mean_score_out_of_2": 0.8
+    },
+    "B": {
+      "count": 10,
+      "distribution": {"0": 0, "1": 0, "2": 10},
+      "total_points": 20,
+      "mean_score_out_of_2": 2.0
+    },
+    "C": {
+      "count": 10,
+      "distribution": {"0": 0, "1": 0, "2": 10},
+      "total_points": 20,
+      "mean_score_out_of_2": 2.0
+    }
+  },
+  "locations": [
+    {
+      "loc_id": "L01",
+      "document_id": "nist-ai-100-1",
+      "page": 6,
+      "anchor_text": "The AI RMF refers to an AI system as an engineered or machine-based system",
+      "A": {
+        "chunk_id": "nist-ai-100-1:p006:fixed:001",
+        "score": 1,
+        "reason": "Đoạn định nghĩa AI system nằm trọn ở giữa, nhưng đầu chunk đứt ngang từ ('nizations, communities...') và cuối chunk cụt đúng chữ 'A' trước câu về autonomy."
+      },
+      "B": {
+        "chunk_id": "nist-ai-100-1:p006:para:000",
+        "score": 2,
+        "reason": "Bắt đầu sạch từ tiêu đề 'Executive Summary', giữ trọn hai đoạn mở đầu và kết thúc hết câu trích dẫn ISO/IEC 22989:2022."
+      },
+      "C": {
+        "chunk_id": "nist-ai-100-1:p006:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunking với B; giữ trọn tiêu đề và ngữ cảnh định nghĩa."
+      }
+    },
+    {
+      "loc_id": "L02",
+      "document_id": "nist-ai-100-1",
+      "page": 9,
+      "anchor_text": "Risk refers to the composite measure of an event’s probability of occurring",
+      "A": {
+        "chunk_id": "nist-ai-100-1:p009:fixed:001",
+        "score": 0,
+        "reason": "Đứt ở đầu ('ontext of the AI RMF...') và cắt ngay giữa vế 1 của công thức định nghĩa rủi ro ('1) the negative impact... if the circumstance or event'), làm mất hoàn toàn vế '2) the likelihood of occurrence'."
+      },
+      "B": {
+        "chunk_id": "nist-ai-100-1:p009:para:001",
+        "score": 2,
+        "reason": "Giữ trọn mục '1.1 Understanding and Addressing Risks, Impacts, and Harms', đầy đủ cả vế 1) magnitude of harm và vế 2) likelihood of occurrence cùng định nghĩa Risk management."
+      },
+      "C": {
+        "chunk_id": "nist-ai-100-1:p009:para:001",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ trọn cấu trúc và đủ hai điều kiện định nghĩa rủi ro."
+      }
+    },
+    {
+      "loc_id": "L03",
+      "document_id": "nist-ai-100-1",
+      "page": 12,
+      "anchor_text": "While the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance",
+      "A": {
+        "chunk_id": "nist-ai-100-1:p012:fixed:000",
+        "score": 1,
+        "reason": "Bắt đầu từ '1.2.2 Risk Tolerance' và giữ được định nghĩa cơ bản, nhưng cuối chunk cắt đứt ngang từ ('Risk tole') và mất đoạn giải thích sự thay đổi risk tolerance theo thời gian."
+      },
+      "B": {
+        "chunk_id": "nist-ai-100-1:p012:para:000",
+        "score": 2,
+        "reason": "Giữ trọn mục '1.2.2 Risk Tolerance' (862 ký tự) từ tiêu đề tới hết đoạn kết thúc hoàn chỉnh (ghi chú: nội dung chunk trọn vẹn 2/2, dù nhãn metadata section bị gán nhầm 'appendix' ở bước metadata)."
+      },
+      "C": {
+        "chunk_id": "nist-ai-100-1:p012:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ trọn đoạn '1.2.2 Risk Tolerance'."
+      }
+    },
+    {
+      "loc_id": "L04",
+      "document_id": "nist-ai-100-1",
+      "page": 18,
+      "anchor_text": "Validation is the “confirmation, through the provision of objective evidence",
+      "A": {
+        "chunk_id": "nist-ai-100-1:p018:fixed:004",
+        "score": 0,
+        "reason": "Bắt đầu đứt từ ('termine whether AI...') và đặt '3.1 Valid and Reliable' ở cuối chunk rồi cắt ngay giữa cụm định nghĩa Validation ('for a specifi'), làm mất nội dung chính định nghĩa Validation và Reliability."
+      },
+      "B": {
+        "chunk_id": "nist-ai-100-1:p018:para:003",
+        "score": 2,
+        "reason": "Giữ trọn tiêu đề '3.1 Valid and Reliable' cùng cả định nghĩa Validation (ISO 9000:2015) và Reliability (ISO/IEC TS 5723:2022)."
+      },
+      "C": {
+        "chunk_id": "nist-ai-100-1:p018:para:003",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ trọn mục '3.1 Valid and Reliable'."
+      }
+    },
+    {
+      "loc_id": "L05",
+      "document_id": "nist-ai-100-1",
+      "page": 28,
+      "anchor_text": "GOVERN 1.6: Mechanisms are in place to inventory AI systems",
+      "A": {
+        "chunk_id": "nist-ai-100-1:p028:fixed:000",
+        "score": 1,
+        "reason": "Hiểu trọn vẹn mục GOVERN 1.5 và GOVERN 1.6 tại vị trí neo, nhưng mục GOVERN 1.7 ở cuối chunk bị cắt ngang nửa câu ('processes and procedures are in place for decommissioning')."
+      },
+      "B": {
+        "chunk_id": "nist-ai-100-1:p028:para:000",
+        "score": 2,
+        "reason": "Gom sạch các mục GOVERN 1.5, 1.6, 1.7, GOVERN 2 và GOVERN 2.1 đúng ranh giới mục bảng."
+      },
+      "C": {
+        "chunk_id": "nist-ai-100-1:p028:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; không cắt ngang mục bảng."
+      }
+    },
+    {
+      "loc_id": "L06",
+      "document_id": "nist-ai-600-1",
+      "page": 5,
+      "anchor_text": "A profile is an implementation of the AI RMF functions, categories, and subcategories",
+      "A": {
+        "chunk_id": "nist-ai-600-1:p005:fixed:001",
+        "score": 1,
+        "reason": "Giữ câu định nghĩa 'profile' đầu tiên, nhưng đầu chunk đứt từ ('n, development...') và câu hai cắt ngang chữ 'a' ('legal/regulatory requirements a')."
+      },
+      "B": {
+        "chunk_id": "nist-ai-600-1:p005:para:001",
+        "score": 2,
+        "reason": "Giữ trọn hai đoạn liền mạch giải thích AI RMF profile và khái niệm cross-sectoral profile."
+      },
+      "C": {
+        "chunk_id": "nist-ai-600-1:p005:para:001",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ trọn ý cả hai đoạn."
+      }
+    },
+    {
+      "loc_id": "L07",
+      "document_id": "nist-ai-600-1",
+      "page": 10,
+      "anchor_text": "Confabulation” refers to a phenomenon in which GAI systems generate and confidently present",
+      "A": {
+        "chunk_id": "nist-ai-600-1:p010:fixed:000",
+        "score": 1,
+        "reason": "Giữ trọn tiêu đề '2.2. Confabulation' và đoạn định nghĩa đầu tiên, nhưng cắt cụt ngay mở đầu đoạn hai ('Confabulations are a')."
+      },
+      "B": {
+        "chunk_id": "nist-ai-600-1:p010:para:000",
+        "score": 2,
+        "reason": "Giữ trọn '2.2. Confabulation' cùng hai đoạn đầy đủ cả định nghĩa lẫn cơ chế xấp xỉ phân phối xác suất."
+      },
+      "C": {
+        "chunk_id": "nist-ai-600-1:p010:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ trọn định nghĩa và cơ chế."
+      }
+    },
+    {
+      "loc_id": "L08",
+      "document_id": "nist-ai-600-1",
+      "page": 18,
+      "anchor_text": "GV-1.2-001: Establish transparency policies and processes for documenting",
+      "A": {
+        "chunk_id": "nist-ai-600-1:p018:fixed:000",
+        "score": 1,
+        "reason": "Giữ trọn GOVERN 1.2 và gần như toàn bộ hành động GV-1.2-001, chỉ cụt dấu đóng ']' ở cuối nhãn [GAI Risks... Intellectual Property]."
+      },
+      "B": {
+        "chunk_id": "nist-ai-600-1:p018:para:000",
+        "score": 2,
+        "reason": "Giữ trọn khối GOVERN 1.2, GV-1.2-001, GV-1.2-002, thẻ 'AI Actor Tasks' và GOVERN 1.3 không bị cắt giữa action."
+      },
+      "C": {
+        "chunk_id": "nist-ai-600-1:p018:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; toàn khối action và AI Actor Tasks trọn vẹn."
+      }
+    },
+    {
+      "loc_id": "L09",
+      "document_id": "nist-ai-600-1",
+      "page": 28,
+      "anchor_text": "MAP 2.1: The specific tasks and methods used to implement the tasks",
+      "A": {
+        "chunk_id": "nist-ai-600-1:p028:fixed:000",
+        "score": 1,
+        "reason": "Mục MAP 2.1 và action MP-2.1-001 đầy đủ, nhưng action kế tiếp MP-2.1-002 bị cắt ngay giữa từ ('including but not limited to, origi')."
+      },
+      "B": {
+        "chunk_id": "nist-ai-600-1:p028:para:000",
+        "score": 2,
+        "reason": "Giữ trọn MAP 2.1, MP-2.1-001, MP-2.1-002, AI Actor Tasks và MAP 2.2 đúng ranh giới khối bảng."
+      },
+      "C": {
+        "chunk_id": "nist-ai-600-1:p028:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; giữ nguyên ranh giới bảng hành động."
+      }
+    },
+    {
+      "loc_id": "L10",
+      "document_id": "nist-ai-600-1",
+      "page": 44,
+      "anchor_text": "MANAGE 1.3: Responses to the AI risks deemed high priority",
+      "A": {
+        "chunk_id": "nist-ai-600-1:p044:fixed:000",
+        "score": 1,
+        "reason": "Mục MANAGE 1.3 ở vị trí neo còn nguyên, nhưng action MG-1.3-001 bên dưới bị cắt giữa câu ('Consider different approaches for mo'), làm mất ví dụ staged release và điều kiện vượt risk tolerance."
+      },
+      "B": {
+        "chunk_id": "nist-ai-600-1:p044:para:000",
+        "score": 2,
+        "reason": "Giữ trọn MANAGE 1.3 và toàn văn MG-1.3-001 kèm thẻ [GAI Risks: Information Security]."
+      },
+      "C": {
+        "chunk_id": "nist-ai-600-1:p044:para:000",
+        "score": 2,
+        "reason": "Dùng chung chunk với B; trọn vẹn mục và action."
+      }
+    }
+  ],
+  "non_anchor_limitations_observed": [
+    "Khi rà soát các truy vết dev/test ngoài 10 vị trí neo trên, Strategy B/C vẫn tồn tại các chunk mở đầu giữa từ/câu tại ranh giới chuyển trang do ingestion/chunking chạy theo từng trang đơn lẻ (ví dụ nist-ai-100-1:p021:para:000 mở đầu bằng 'ple, how a human operator...' ở câu dev q04)."
+  ]
+}

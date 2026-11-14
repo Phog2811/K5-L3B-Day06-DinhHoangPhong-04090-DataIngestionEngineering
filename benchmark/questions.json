@@ -1,0 +1,275 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Which U.S. statute directed NIST to develop the AI Risk Management Framework?",
+    "expected_answer": "The National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283).",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 7,
+    "evidence_quote": "As directed by the National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283), the goal of the AI RMF is to offer a resource to the organizations designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustworthy and responsible development and use of AI systems.",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "When might a risk management framework not yet be readily applicable for mitigating negative AI risks according to the Risk Tolerance section?",
+    "expected_answer": "When challenges for specifying AI risk tolerances remain unresolved, there may be contexts where a risk management framework is not yet readily applicable for mitigating negative AI risks.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 12,
+    "evidence_quote": "To the extent that challenges for specifying AI risk tolerances remain unresolved, there may be contexts where a risk management framework is not yet readily applicable for mitigating negative AI risks.",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "In AI RMF 1.0, what must a robust AI system do when operating outside expected deployment conditions?",
+    "expected_answer": "Robustness requires not only performing as it does under expected uses, but also performing in ways that minimize potential harms to people if operating in an unexpected setting.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 19,
+    "evidence_quote": "Robustness requires not only that the system perform exactly as it does under expected uses, but also that it should perform in ways that minimize potential harms to people if it is operating in an unexpected setting.",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Does a transparent AI system automatically guarantee accuracy, privacy, security, or fairness, and why is transparency still critical over time?",
+    "expected_answer": "No; a transparent system is not necessarily accurate, privacy-enhanced, secure, or fair, but without transparency it is difficult to determine whether an opaque system possesses those characteristics as complex systems evolve.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 21,
+    "evidence_quote": "A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve.",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "What are the three major categories of AI bias identified by NIST, and can they occur without discriminatory intent?",
+    "expected_answer": "Systemic, computational and statistical, and human-cognitive bias; each can occur in the absence of prejudice, partiality, or discriminatory intent.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 23,
+    "evidence_quote": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive. Each of these can occur in the absence of prejudice, partiality, or discriminatory intent.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Under GOVERN 1.7, what must organizational procedures ensure when phasing out an AI system?",
+    "expected_answer": "Decommissioning and phasing out AI systems must be done safely and in a manner that does not increase risks or decrease the organization's trustworthiness.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 28,
+    "evidence_quote": "GOVERN 1.7: Processes and procedures are in place for decommissioning and phasing out AI systems safely and in a manner that does not increase risks or decrease the organization’s trustworthiness.",
+    "alternative_gold": [
+      {"source_id": "nist-ai-600-1", "page": 21}
+    ],
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Under MEASURE 2.6, what safety behavior must an AI system demonstrate if pushed past its knowledge boundaries, and what should safety metrics reflect?",
+    "expected_answer": "It must be demonstrated safe with residual negative risk within risk tolerance and able to fail safely beyond its knowledge limits; safety metrics must reflect reliability, robustness, real-time monitoring, and failure response times.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 35,
+    "evidence_quote": "The AI system to be deployed is demonstrated to be safe, its residual negative risk does not exceed the risk tolerance, and it can fail safely, particularly if made to operate beyond its knowledge limits. Safety metrics reflect system reliability and robustness, real-time monitoring, and response times for AI system failures.",
+    "alternative_gold": [
+      {"source_id": "nist-ai-600-1", "page": 36}
+    ],
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "How does AI RMF 1.0 distinguish between an AI RMF Current Profile and a Target Profile?",
+    "expected_answer": "A Current Profile indicates how AI is currently being managed and related risks in current outcomes, while a Target Profile indicates outcomes needed to achieve desired AI risk management goals.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 38,
+    "evidence_quote": "An AI RMF Current Profile indicates how AI is currently being managed and the related risks in terms of current outcomes. A Target Profile indicates the outcomes needed to achieve the desired or target AI risk management goals.",
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Why can relying on pre-trained models introduce new risks compared to traditional software even when they improve accuracy?",
+    "expected_answer": "Pre-trained models can increase statistical uncertainty and cause issues with bias management, scientific validity, and reproducibility.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 43,
+    "evidence_quote": "Use of pre-trained models that can advance research and improve performance can also increase levels of statistical uncertainty and cause issues with bias management, scientific validity, and reproducibility.",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "In Appendix D of AI RMF 1.0, what does Attribute 7 mean by stating the framework is outcome-focused and non-prescriptive?",
+    "expected_answer": "It provides a catalog of outcomes and approaches rather than prescribing one-size-fits-all requirements.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 47,
+    "evidence_quote": "7. Be outcome-focused and non-prescriptive. The Framework should provide a catalog of outcomes and approaches rather than prescribe one-size-fits-all requirements.",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "In generative AI confabulation, when might non-factual content generation be a desired behavior rather than a problem?",
+    "expected_answer": "While confabulations of falsehoods are mainly a problem for text outputs, creative generation of non-factual content can be a desired behavior for audio, image, or video content.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 10,
+    "evidence_quote": "Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Why are model distillation and compression only a partial solution for lowering the environmental impact of generative AI?",
+    "expected_answer": "Distillation or compression can reduce environmental impacts at inference time, but training and tuning those smaller models may still contribute to environmental impacts.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 12,
+    "evidence_quote": "Methods for creating smaller versions of trained models, such as model distillation or compression, could reduce environmental impacts at inference time, but training and tuning such models may still contribute to their environmental impacts.",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Must generative AI disinformation imagery be photorealistic to support malicious influence campaigns?",
+    "expected_answer": "No; compelling imagery and propaganda created by GAI models may not be photorealistic yet still enable disinformation campaigns to gain greater reach and engagement on social media platforms.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 14,
+    "evidence_quote": "Generative AI models can also assist malicious actors in creating compelling imagery and propaganda to support disinformation campaigns, which may not be photorealistic, but could enable these campaigns to gain more reach and engagement on social media platforms.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Which purpose-built testing environment is named in action MS-2.3-004 to empirically evaluate GAI trustworthy characteristics?",
+    "expected_answer": "NIST Dioptra.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 35,
+    "evidence_quote": "MS-2.3-004: Utilize a purpose-built testing environment such as NIST Dioptra to empirically evaluate GAI trustworthy characteristics.",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Why do high scores on human standardized tests like professional licensing exams fail to guarantee a GAI system's real-world reliability?",
+    "expected_answer": "Anecdotal testing via video games or standardized tests designed for humans does not guarantee GAI system validity or reliability in those domains, and laboratory benchmarks often mismatch real-world conditions.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 53,
+    "evidence_quote": "For example, the anecdotal testing of GAI system capabilities through video games or standardized tests designed for humans (e.g., intelligence tests, professional licensing exams) does not guarantee GAI system validity or reliability in those domains.",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "In the 2024 Generative AI Profile, what risks should organizations integrate into GAI acquisition and procurement vendor due diligence assessments under GV-6.1-009?",
+    "expected_answer": "Due diligence processes for GAI vendor assessments should be updated to include intellectual property, data privacy, security, and other risks.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 25,
+    "evidence_quote": "GV-6.1-009: Update and integrate due diligence processes for GAI acquisition and procurement vendor assessments to include intellectual property, data privacy, security, and other risks.",
+    "filter": {"year": 2024}
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Within the core AI RMF 1.0 framework, what socio-technical and privacy principles govern system requirements under MAP 1.6?",
+    "expected_answer": "System requirements (e.g., respecting user privacy) are elicited from and understood by relevant AI actors, and design decisions take socio-technical implications into account to address AI risks.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 31,
+    "evidence_quote": "MAP 1.6: System requirements (e.g., “the system shall respect the privacy of its users”) are elicited from and understood by relevant AI actors. Design decisions take socio-technical implications into account to address AI risks.",
+    "filter": {"document_type": "core_framework"}
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "In the MANAGE section of the 2024 Generative AI Profile, when must third-party GAI models have their risks re-assessed according to MG-3.1-003?",
+    "expected_answer": "After fine-tuning or retrieval-augmented generation implementation, and for any third-party GAI models deployed for applications or use cases not evaluated in initial testing.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 46,
+    "evidence_quote": "MG-3.1-003: Re-assess model risks after fine-tuning or retrieval-augmented generation implementation and for any third-party GAI models deployed for applications and/or use cases that were not evaluated in initial testing.",
+    "filter": {"year": 2024, "section": "manage"}
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "In Figure 4 of AI RMF 1.0, which trustworthiness characteristic forms the base for the others, and why is Accountable & Transparent shown vertically?",
+    "expected_answer": "Valid & Reliable is shown as the base as a necessary condition of trustworthiness, while Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 17,
+    "evidence_quote": "Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.",
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Under MANAGE 2.4, under what condition must mechanisms to supersede, disengage, or deactivate an AI system be applied?",
+    "expected_answer": "When AI systems demonstrate performance or outcomes inconsistent with intended use.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 37,
+    "evidence_quote": "MANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+    "alternative_gold": [
+      {"source_id": "nist-ai-600-1", "page": 45}
+    ],
+    "filter": null
+  },
+  {
+    "id": "q21",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "How do adversaries carry out indirect prompt injection attacks against LLM-integrated applications without a direct prompt interface?",
+    "expected_answer": "Adversaries exploit LLM-integrated applications remotely by injecting prompts into external data likely to be retrieved.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 15,
+    "evidence_quote": "Indirect prompt injection attacks occur when adversaries remotely (i.e., without a direct interface) exploit LLM-integrated applications by injecting prompts into data likely to be retrieved.",
+    "filter": null
+  },
+  {
+    "id": "q22",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Under MEASURE 2.7 in the Generative AI Profile, what categories of attacks should AI red-teaming (MS-2.7-007) test resilience against?",
+    "expected_answer": "Abuse to facilitate attacks on other systems (malicious code generation, enhanced phishing), GAI attacks (prompt injection), and ML attacks (adversarial examples/prompts, data poisoning, membership inference, model extraction, sponge examples).",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 37,
+    "evidence_quote": "MS-2.7-007: Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on other systems (e.g., malicious code generation, enhanced phishing content), GAI attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts, data poisoning, membership inference, model extraction, sponge examples).",
+    "filter": null
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "In the GOVERN section of the 2023 Core Framework, what must contingency processes under GOVERN 6.2 handle?",
+    "expected_answer": "Contingency processes must handle failures or incidents in third-party data or AI systems deemed to be high-risk.",
+    "gold_source_id": "nist-ai-100-1",
+    "gold_page": 29,
+    "evidence_quote": "GOVERN 6.2: Contingency processes are in place to handle failures or incidents in third-party data or AI systems deemed to be high-risk.",
+    "filter": {"document_type": "core_framework", "section": "govern"}
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "In the MANAGE section of the 2024 Generative AI Profile, what after-action assessments are required for GAI incidents under MG-4.3-001?",
+    "expected_answer": "Conduct after-action assessments for GAI system incidents to verify incident response and recovery processes are followed and effective, including communicating incidents to relevant AI Actors and applicable legal and regulatory bodies.",
+    "gold_source_id": "nist-ai-600-1",
+    "gold_page": 49,
+    "evidence_quote": "MG-4.3-001: Conduct after-action assessments for GAI system incidents to verify incident response and recovery processes are followed and effective, including to follow procedures for communicating incidents to relevant AI Actors and where applicable, relevant legal and regulatory bodies.",
+    "filter": {"year": 2024, "section": "manage"}
+  }
+]

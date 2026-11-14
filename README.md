@@ -12,6 +12,39 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
 
+## Hướng dẫn setup & chạy bài nộp (Đinh Hoàng Phong · MSSV 04090)
+
+- **Corpus & Manifest:** [data/manifest.json](data/manifest.json) — 2 PDF công khai của NIST (`NIST.AI.100-1.pdf` và `NIST.AI.600-1.pdf`, tổng **95 trang nội dung hữu ích** / 112 trang vật lý), đặt trong `starter/data/`.
+- **Benchmark & Tiêu chí chọn:** [benchmark/questions.json](benchmark/questions.json) & [benchmark/README.md](benchmark/README.md) (**24 câu**: `18 dev / 6 test`, gồm `5` câu metadata filter).
+- **Pipeline & Vector Store:** Hiện thực trong [starter/src/](starter/src/) (`ingestion.py`, `chunking.py`, `embeddings.py`, `store.py`, `evaluation.py`, `run.py`), dùng `gemini-embedding-001` (`3072` chiều, `google-genai==3.3.0`) và PostgreSQL 16 + `pgvector 0.8.7`.
+
+Chạy tái lập trên Windows PowerShell:
+
+```powershell
+cd starter
+Copy-Item .env.example .env   # điền GEMINI_API_KEY và EMBEDDING_MODEL=gemini-embedding-001
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py
+python -m src.run
+```
+
+> Lưu ý: Không commit `starter/.env` hoặc `starter/.venv/`. Đầu ra benchmark, trace và nhãn audit lưu trong `results/`, bảng nhật ký trong [artifacts/experiment_log.csv](artifacts/experiment_log.csv) và báo cáo cá nhân trong [report/individual/04090_DinhHoangPhong.md](report/individual/04090_DinhHoangPhong.md).
+
+### Xem nhanh kết quả & tài liệu nộp bài
+
+- **Báo cáo cá nhân:** [report/individual/04090_DinhHoangPhong.md](report/individual/04090_DinhHoangPhong.md)
+- **Bảng nhật ký thí nghiệm (render bảng trực tiếp trên GitHub):** [artifacts/experiment_log.csv](artifacts/experiment_log.csv)
+- **Kết quả tổng hợp & audit thủ công:** [results/summary_metrics.json](results/summary_metrics.json) · [results/manual_audit_coherence.json](results/manual_audit_coherence.json) · [results/manual_audit_metadata_and_grounding.json](results/manual_audit_metadata_and_grounding.json)
+
+| Strategy | Chunking / Filter | Chunks | Dev Hit@1 | Dev Ev. Hit@3 | Test Hit@1 | Test Ev. Hit@3 | Filter (Dev / Test) | Coherence `/2` | Grounding Test `/2` |
+|---|---|---|---|---|---|---|---|---|---|
+| **A** | `fixed_size(500, 50)` / none | 565 | 11/18 (61.11%) | 13/18 (72.22%) | 5/6 (83.33%) | 6/6 (100.00%) | 3/3 / 1/2 | 0.80 (`n=10`) | 1.83 (`n=6`) |
+| **B** | `by_paragraph(1100)` / none | 302 | 15/18 (83.33%) | 18/18 (100.00%) | 5/6 (83.33%) | 5/6 (83.33%) | 2/3 / 1/2 | 2.00 (`n=10`) | 1.83 (`n=6`) |
+| **C (Chọn)** | `by_paragraph(1100)` / SQL filter | 302 | 15/18 (83.33%) | 18/18 (100.00%) | 6/6 (100.00%) | 6/6 (100.00%) | 3/3 / 2/2 | 2.00 (`n=10`) | 2.00 (`n=6`) |
+
 ## 1. Xây pipeline
 
 ![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)

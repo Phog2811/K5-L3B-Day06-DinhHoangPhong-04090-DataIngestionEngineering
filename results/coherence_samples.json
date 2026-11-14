@@ -1,0 +1,322 @@
+[
+  {
+    "loc_id": "L01",
+    "document_id": "nist-ai-100-1",
+    "page": 6,
+    "anchor_text": "The AI RMF refers to an AI system as an engineered or machine-based system",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-100-1:p006:fixed:001",
+          "char_len": 500,
+          "section": "executive_summary",
+          "text": "nizations, communities, society, the environment, and the planet. Like risks for other types of technology, AI risks can emerge in a variety of ways and can be characterized as long- or short-term, high- or low-probability, systemic or localized, and high- or low-impact.\n\nThe AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. A"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-100-1:p006:para:000",
+          "char_len": 1084,
+          "section": "executive_summary",
+          "text": "Executive Summary\n\nArtificial intelligence (AI) technologies have significant potential to transform society and people’s lives – from commerce and health to transportation and cybersecurity to the environment and our planet. AI technologies can drive inclusive economic growth and support scientific advancements that improve the conditions of our world. AI technologies, however, also pose risks that can negatively impact individuals, groups, organizations, communities, society, the environment, and the planet. Like risks for other types of technology, AI risks can emerge in a variety of ways and can be characterized as long- or short-term, high- or low-probability, systemic or localized, and high- or low-impact.\n\nThe AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy (Adapted from: OECD Recommendation on AI:2019; ISO /IEC 22989:2022)."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-100-1:p006:para:000",
+          "char_len": 1084,
+          "section": "executive_summary",
+          "text": "Executive Summary\n\nArtificial intelligence (AI) technologies have significant potential to transform society and people’s lives – from commerce and health to transportation and cybersecurity to the environment and our planet. AI technologies can drive inclusive economic growth and support scientific advancements that improve the conditions of our world. AI technologies, however, also pose risks that can negatively impact individuals, groups, organizations, communities, society, the environment, and the planet. Like risks for other types of technology, AI risks can emerge in a variety of ways and can be characterized as long- or short-term, high- or low-probability, systemic or localized, and high- or low-impact.\n\nThe AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy (Adapted from: OECD Recommendation on AI:2019; ISO /IEC 22989:2022)."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L02",
+    "document_id": "nist-ai-100-1",
+    "page": 9,
+    "anchor_text": "Risk refers to the composite measure of an event’s probability of occurring",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-100-1:p009:fixed:001",
+          "char_len": 499,
+          "section": "foundational",
+          "text": "ontext of the AI RMF,risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event. The impacts, or consequences, of AI systems can be positive, negative, or both and can result in opportunities or threats (Adapted from: ISO 31000:2018). When considering the negative impact of a potential event, risk is a function of 1) the negative impact, or magnitude of harm, that would arise if the circumstance or event"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-100-1:p009:para:001",
+          "char_len": 924,
+          "section": "foundational",
+          "text": "1.1 Understanding and Addressing Risks, Impacts, and Harms\n\nIn the context of the AI RMF,risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event. The impacts, or consequences, of AI systems can be positive, negative, or both and can result in opportunities or threats (Adapted from: ISO 31000:2018). When considering the negative impact of a potential event, risk is a function of 1) the negative impact, or magnitude of harm, that would arise if the circumstance or event occurs and 2) the likelihood of occurrence (Adapted from: OMB Circular A-130:2016). Negative impact or harm can be experienced by individuals, groups, communities, organizations, society, the environment, and the planet.\n\n“Risk management refers to coordinated activities to direct and control an organization with regard to risk” (Source: ISO 31000:2018)."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-100-1:p009:para:001",
+          "char_len": 924,
+          "section": "foundational",
+          "text": "1.1 Understanding and Addressing Risks, Impacts, and Harms\n\nIn the context of the AI RMF,risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event. The impacts, or consequences, of AI systems can be positive, negative, or both and can result in opportunities or threats (Adapted from: ISO 31000:2018). When considering the negative impact of a potential event, risk is a function of 1) the negative impact, or magnitude of harm, that would arise if the circumstance or event occurs and 2) the likelihood of occurrence (Adapted from: OMB Circular A-130:2016). Negative impact or harm can be experienced by individuals, groups, communities, organizations, society, the environment, and the planet.\n\n“Risk management refers to coordinated activities to direct and control an organization with regard to risk” (Source: ISO 31000:2018)."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L03",
+    "document_id": "nist-ai-100-1",
+    "page": 12,
+    "anchor_text": "While the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-100-1:p012:fixed:000",
+          "char_len": 500,
+          "section": "foundational",
+          "text": "1.2.2 Risk Tolerance\n\nWhile the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives. Risk tolerance can be influenced by legal or regulatory requirements (Adapted from: ISO GUIDE 73). Risk tolerance and the level of risk that is acceptable to organizations or society are highly contextual and application and use-case specific. Risk tole"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-100-1:p012:para:000",
+          "char_len": 862,
+          "section": "appendix",
+          "text": "1.2.2 Risk Tolerance\n\nWhile the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives. Risk tolerance can be influenced by legal or regulatory requirements (Adapted from: ISO GUIDE 73). Risk tolerance and the level of risk that is acceptable to organizations or society are highly contextual and application and use-case specific. Risk tolerances can be influenced by policies and norms established by AI system owners, organizations, industries, communities, or policy makers. Risk tolerances are likely to change over time as AI systems, policies, and norms evolve. Different organizations may have varied risk tolerances due to their particular organizational priorities and resource considerations."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-100-1:p012:para:000",
+          "char_len": 862,
+          "section": "appendix",
+          "text": "1.2.2 Risk Tolerance\n\nWhile the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives. Risk tolerance can be influenced by legal or regulatory requirements (Adapted from: ISO GUIDE 73). Risk tolerance and the level of risk that is acceptable to organizations or society are highly contextual and application and use-case specific. Risk tolerances can be influenced by policies and norms established by AI system owners, organizations, industries, communities, or policy makers. Risk tolerances are likely to change over time as AI systems, policies, and norms evolve. Different organizations may have varied risk tolerances due to their particular organizational priorities and resource considerations."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L04",
+    "document_id": "nist-ai-100-1",
+    "page": 18,
+    "anchor_text": "Validation is the “confirmation, through the provision of objective evidence",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-100-1:p018:fixed:004",
+          "char_len": 500,
+          "section": "foundational",
+          "text": "termine whether AI technology is an appropriate or necessary tool for a given context or purpose, and how to use it responsibly. The decision to commission or deploy an AI system should be based on a contextual assessment of trustworthiness characteristics and the relative risks, impacts, costs, and benefits, and informed by a broad set of interested parties.\n\n3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the requirements for a specifi"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-100-1:p018:para:003",
+          "char_len": 786,
+          "section": "foundational",
+          "text": "3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the requirements for a specific intended use or application have been fulfilled” (Source: ISO 9000:2015). Deployment of AI systems which are inaccurate, unreliable, or poorly generalized to data and settings beyond their training creates and increases negative AI risks and reduces trustworthiness.\n\nReliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO /IEC TS 5723:2022). Reliability is a goal for overall correctness of AI system operation under the conditions of expected use and over a given period of time, including the entire lifetime of the system."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-100-1:p018:para:003",
+          "char_len": 786,
+          "section": "foundational",
+          "text": "3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the requirements for a specific intended use or application have been fulfilled” (Source: ISO 9000:2015). Deployment of AI systems which are inaccurate, unreliable, or poorly generalized to data and settings beyond their training creates and increases negative AI risks and reduces trustworthiness.\n\nReliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO /IEC TS 5723:2022). Reliability is a goal for overall correctness of AI system operation under the conditions of expected use and over a given period of time, including the entire lifetime of the system."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L05",
+    "document_id": "nist-ai-100-1",
+    "page": 28,
+    "anchor_text": "GOVERN 1.6: Mechanisms are in place to inventory AI systems",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-100-1:p028:fixed:000",
+          "char_len": 500,
+          "section": "govern",
+          "text": "Table 1: Categories and subcategories for the GOVERN function. (Continued)\n\nGOVERN 1.5: Ongoing monitoring and periodic review of the risk management process and its outcomes are planned and organizational roles and responsibilities clearly defined, including determining the frequency of periodic review.\n\nGOVERN 1.6: Mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities.\n\nGOVERN 1.7: Processes and procedures are in place for decommissioning"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-100-1:p028:para:000",
+          "char_len": 1013,
+          "section": "govern",
+          "text": "Table 1: Categories and subcategories for the GOVERN function. (Continued)\n\nGOVERN 1.5: Ongoing monitoring and periodic review of the risk management process and its outcomes are planned and organizational roles and responsibilities clearly defined, including determining the frequency of periodic review.\n\nGOVERN 1.6: Mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities.\n\nGOVERN 1.7: Processes and procedures are in place for decommissioning and phasing out AI systems safely and in a manner that does not increase risks or decrease the organization’s trustworthiness.\n\nGOVERN 2: Accountability structures are in place so that the appropriate teams and individuals are empowered, responsible, and trained for mapping, measuring, and managing AI risks.\n\nGOVERN 2.1: Roles and responsibilities and lines of communication related to mapping, measuring, and managing AI risks are documented and are clear to individuals and teams throughout the organization."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-100-1:p028:para:000",
+          "char_len": 1013,
+          "section": "govern",
+          "text": "Table 1: Categories and subcategories for the GOVERN function. (Continued)\n\nGOVERN 1.5: Ongoing monitoring and periodic review of the risk management process and its outcomes are planned and organizational roles and responsibilities clearly defined, including determining the frequency of periodic review.\n\nGOVERN 1.6: Mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities.\n\nGOVERN 1.7: Processes and procedures are in place for decommissioning and phasing out AI systems safely and in a manner that does not increase risks or decrease the organization’s trustworthiness.\n\nGOVERN 2: Accountability structures are in place so that the appropriate teams and individuals are empowered, responsible, and trained for mapping, measuring, and managing AI risks.\n\nGOVERN 2.1: Roles and responsibilities and lines of communication related to mapping, measuring, and managing AI risks are documented and are clear to individuals and teams throughout the organization."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L06",
+    "document_id": "nist-ai-600-1",
+    "page": 5,
+    "anchor_text": "A profile is an implementation of the AI RMF functions, categories, and subcategories",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-600-1:p005:fixed:001",
+          "char_len": 500,
+          "section": "introduction",
+          "text": "n, development, use, and evaluation of AI products, services, and systems.\n\nA profile is an implementation of the AI RMF functions, categories, and subcategories for a specific setting, application, or technology – in this case, Generative AI (GAI) – based on the requirements, risk tolerance, and resources of the Framework user. AI RMF profiles assist organizations in deciding how to best manage AI risks in a manner that is well-aligned with their goals, considers legal/regulatory requirements a"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-600-1:p005:para:001",
+          "char_len": 1032,
+          "section": "introduction",
+          "text": "A profile is an implementation of the AI RMF functions, categories, and subcategories for a specific setting, application, or technology – in this case, Generative AI (GAI) – based on the requirements, risk tolerance, and resources of the Framework user. AI RMF profiles assist organizations in deciding how to best manage AI risks in a manner that is well-aligned with their goals, considers legal/regulatory requirements and best practices, and reflects risk management priorities. Consistent with other AI RMF profiles, this profile offers insights into how risk can be managed across various stages of the AI lifecycle and for GAI as a technology.\n\nAs GAI covers risks of models or applications that can be used across use cases or sectors, this document is an AI RMF cross-sectoral profile. Cross-sectoral profiles can be used to govern, map, measure, and manage risks associated with activities or business processes common across sectors, such as the use of large language models (LLMs), cloud-based services, or acquisition."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-600-1:p005:para:001",
+          "char_len": 1032,
+          "section": "introduction",
+          "text": "A profile is an implementation of the AI RMF functions, categories, and subcategories for a specific setting, application, or technology – in this case, Generative AI (GAI) – based on the requirements, risk tolerance, and resources of the Framework user. AI RMF profiles assist organizations in deciding how to best manage AI risks in a manner that is well-aligned with their goals, considers legal/regulatory requirements and best practices, and reflects risk management priorities. Consistent with other AI RMF profiles, this profile offers insights into how risk can be managed across various stages of the AI lifecycle and for GAI as a technology.\n\nAs GAI covers risks of models or applications that can be used across use cases or sectors, this document is an AI RMF cross-sectoral profile. Cross-sectoral profiles can be used to govern, map, measure, and manage risks associated with activities or business processes common across sectors, such as the use of large language models (LLMs), cloud-based services, or acquisition."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L07",
+    "document_id": "nist-ai-600-1",
+    "page": 10,
+    "anchor_text": "Confabulation” refers to a phenomenon in which GAI systems generate and confidently present",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-600-1:p010:fixed:000",
+          "char_len": 499,
+          "section": "gai_risks",
+          "text": "2.2. Confabulation\n\n“Confabulation” refers to a phenomenon in which GAI systems generate and confidently present erroneous or false content in response to prompts. Confabulations also include generated outputs that diverge from the prompts or other input or that contradict previously generated statements in the same context. These phenomena are colloquially also referred to as “hallucinations” or “fabrications.”\n\nConfabulations can occur across GAI outputs and contexts.9,10 Confabulations are a"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-600-1:p010:para:000",
+          "char_len": 1068,
+          "section": "gai_risks",
+          "text": "2.2. Confabulation\n\n“Confabulation” refers to a phenomenon in which GAI systems generate and confidently present erroneous or false content in response to prompts. Confabulations also include generated outputs that diverge from the prompts or other input or that contradict previously generated statements in the same context. These phenomena are colloquially also referred to as “hallucinations” or “fabrications.”\n\nConfabulations can occur across GAI outputs and contexts.9,10 Confabulations are a natural result of the way generative models are designed: they generate outputs that approximate the statistical distribution of their training data; for example, LLMs predict the next token or word in a sentence or phrase. While such statistical prediction can produce factually accurate and consistent outputs, it can also produce outputs that are factually inaccurate or internally inconsistent. This dynamic is particularly relevant when it comes to open-ended prompts for long-form responses and in domains which require highly contextual and/or domain expertise."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-600-1:p010:para:000",
+          "char_len": 1068,
+          "section": "gai_risks",
+          "text": "2.2. Confabulation\n\n“Confabulation” refers to a phenomenon in which GAI systems generate and confidently present erroneous or false content in response to prompts. Confabulations also include generated outputs that diverge from the prompts or other input or that contradict previously generated statements in the same context. These phenomena are colloquially also referred to as “hallucinations” or “fabrications.”\n\nConfabulations can occur across GAI outputs and contexts.9,10 Confabulations are a natural result of the way generative models are designed: they generate outputs that approximate the statistical distribution of their training data; for example, LLMs predict the next token or word in a sentence or phrase. While such statistical prediction can produce factually accurate and consistent outputs, it can also produce outputs that are factually inaccurate or internally inconsistent. This dynamic is particularly relevant when it comes to open-ended prompts for long-form responses and in domains which require highly contextual and/or domain expertise."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L08",
+    "document_id": "nist-ai-600-1",
+    "page": 18,
+    "anchor_text": "GV-1.2-001: Establish transparency policies and processes for documenting",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-600-1:p018:fixed:000",
+          "char_len": 500,
+          "section": "govern",
+          "text": "GOVERN 1.2: The characteristics of trustworthy AI are integrated into organizational policies, processes, procedures, and practices.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.2-001: Establish transparency policies and processes for documenting the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches. [GAI Risks: Data Privacy; Information Integrity; Intellectual Property"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-600-1:p018:para:000",
+          "char_len": 984,
+          "section": "govern",
+          "text": "GOVERN 1.2: The characteristics of trustworthy AI are integrated into organizational policies, processes, procedures, and practices.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.2-001: Establish transparency policies and processes for documenting the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches. [GAI Risks: Data Privacy; Information Integrity; Intellectual Property]\n\nGV-1.2-002: Establish policies to evaluate risk-relevant capabilities of GAI and robustness of safety measures, both prior to deployment and on an ongoing basis, through internal and external evaluations. [GAI Risks: CBRN Information or Capabilities; Information Security]\n\nAI Actor Tasks: Governance and Oversight\n\nGOVERN 1.3: Processes, procedures, and practices are in place to determine the needed level of risk management activities based on the organization’s risk tolerance."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-600-1:p018:para:000",
+          "char_len": 984,
+          "section": "govern",
+          "text": "GOVERN 1.2: The characteristics of trustworthy AI are integrated into organizational policies, processes, procedures, and practices.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.2-001: Establish transparency policies and processes for documenting the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches. [GAI Risks: Data Privacy; Information Integrity; Intellectual Property]\n\nGV-1.2-002: Establish policies to evaluate risk-relevant capabilities of GAI and robustness of safety measures, both prior to deployment and on an ongoing basis, through internal and external evaluations. [GAI Risks: CBRN Information or Capabilities; Information Security]\n\nAI Actor Tasks: Governance and Oversight\n\nGOVERN 1.3: Processes, procedures, and practices are in place to determine the needed level of risk management activities based on the organization’s risk tolerance."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L09",
+    "document_id": "nist-ai-600-1",
+    "page": 28,
+    "anchor_text": "MAP 2.1: The specific tasks and methods used to implement the tasks",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-600-1:p028:fixed:000",
+          "char_len": 500,
+          "section": "map",
+          "text": "MAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers, generative models, recommenders).\n\nAction ID Suggested Action GAI Risks\n\nMP-2.1-001 Establish known assumptions and practices for determining data origin and content lineage, for documentation and evaluation purposes. Information Integrity\n\nMP-2.1-002: Institute test and evaluation for data and content flows within the GAI system, including but not limited to, origi"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-600-1:p028:para:000",
+          "char_len": 905,
+          "section": "map",
+          "text": "MAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers, generative models, recommenders).\n\nAction ID Suggested Action GAI Risks\n\nMP-2.1-001 Establish known assumptions and practices for determining data origin and content lineage, for documentation and evaluation purposes. Information Integrity\n\nMP-2.1-002: Institute test and evaluation for data and content flows within the GAI system, including but not limited to, original data sources, data transformations, and decision-making criteria. [GAI Risks: Intellectual Property; Data Privacy]\n\nAI Actor Tasks: TEVV\n\nMAP 2.2: Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI Actors when making decisions and taking subsequent actions."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-600-1:p028:para:000",
+          "char_len": 905,
+          "section": "map",
+          "text": "MAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers, generative models, recommenders).\n\nAction ID Suggested Action GAI Risks\n\nMP-2.1-001 Establish known assumptions and practices for determining data origin and content lineage, for documentation and evaluation purposes. Information Integrity\n\nMP-2.1-002: Institute test and evaluation for data and content flows within the GAI system, including but not limited to, original data sources, data transformations, and decision-making criteria. [GAI Risks: Intellectual Property; Data Privacy]\n\nAI Actor Tasks: TEVV\n\nMAP 2.2: Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI Actors when making decisions and taking subsequent actions."
+        }
+      ]
+    }
+  },
+  {
+    "loc_id": "L10",
+    "document_id": "nist-ai-600-1",
+    "page": 44,
+    "anchor_text": "MANAGE 1.3: Responses to the AI risks deemed high priority",
+    "strategies": {
+      "A": [
+        {
+          "chunk_id": "nist-ai-600-1:p044:fixed:000",
+          "char_len": 500,
+          "section": "manage",
+          "text": "MANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP function, are developed, planned, and documented. Risk response options can include mitigating, transferring, avoiding, or accepting.\n\nAction ID Suggested Action GAI Risks\n\nMG-1.3-001: Document trade-offs, decision processes, and relevant measurement and feedback results for risks that do not surpass organizational risk tolerance, for example, in the context of model release: Consider different approaches for mo"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "nist-ai-600-1:p044:para:000",
+          "char_len": 762,
+          "section": "manage",
+          "text": "MANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP function, are developed, planned, and documented. Risk response options can include mitigating, transferring, avoiding, or accepting.\n\nAction ID Suggested Action GAI Risks\n\nMG-1.3-001: Document trade-offs, decision processes, and relevant measurement and feedback results for risks that do not surpass organizational risk tolerance, for example, in the context of model release: Consider different approaches for model release, for example, leveraging a staged release approach. Consider release approaches in the context of the model and its projected use cases. Mitigate, transfer, or avoid risks that surpass organizational risk tolerances. [GAI Risks: Information Security]"
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "nist-ai-600-1:p044:para:000",
+          "char_len": 762,
+          "section": "manage",
+          "text": "MANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP function, are developed, planned, and documented. Risk response options can include mitigating, transferring, avoiding, or accepting.\n\nAction ID Suggested Action GAI Risks\n\nMG-1.3-001: Document trade-offs, decision processes, and relevant measurement and feedback results for risks that do not surpass organizational risk tolerance, for example, in the context of model release: Consider different approaches for model release, for example, leveraging a staged release approach. Consider release approaches in the context of the model and its projected use cases. Mitigate, transfer, or avoid risks that surpass organizational risk tolerances. [GAI Risks: Information Security]"
+        }
+      ]
+    }
+  }
+]
